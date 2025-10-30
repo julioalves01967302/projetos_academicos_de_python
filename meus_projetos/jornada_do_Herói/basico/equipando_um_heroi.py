@@ -14,7 +14,7 @@ class Guerreiro:
         self.arma=arma
         print(f"{self.nome} equipou a arma: {arma.nome}!") 
 
-espada_longa= arma('espada longa',30) 
-Julio= Guerreiro ('Julio',100,19)   
-Julio.equipar_arma(espada_longa)
+espada_longa= arma('espada longa',250) 
+meliodas= Guerreiro ('meliodas',100,115)   
+meliodas.equipar_arma(espada_longa)
                 

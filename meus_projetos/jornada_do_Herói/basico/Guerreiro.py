@@ -4,5 +4,5 @@ class guerreiro:
         self.vida=pontos_de_vida
         self.ataque=fonte_de_ataque
 
-guerreiro1=guerreiro('julio',100,19)
+guerreiro1=guerreiro('meliodas',100,115)
 print(f'nome do guerreiro {guerreiro1.nome}')

@@ -5,5 +5,5 @@ class arqueiro:
         self.ataque=fonte_de_ataque
         self.precisão=precisão 
 
-arqueiro1=arqueiro('arqueiro_verde',115,25,100)
+arqueiro1=arqueiro('arqueiro_verde',115,125,135)
 print(f'nome do arqueiro : {arqueiro1.nome}')
