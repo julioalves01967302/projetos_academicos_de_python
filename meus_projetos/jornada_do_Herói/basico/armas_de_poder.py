@@ -9,7 +9,7 @@ class Arma:
 
 
 espada_longa = Arma("Espada Longa", 250)
-cajado_magico = Arma("Cajado Mágico", 305)
+cajado_magico = Arma("Cajado Mágico", 300)
 
 
 print(espada_longa)
