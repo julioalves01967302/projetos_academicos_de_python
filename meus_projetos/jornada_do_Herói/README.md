@@ -11,36 +11,32 @@
 
 ## 📋 Sobre o Projeto
 
-Este projeto é uma **atividade didática de RPG**, estruturada em um conjunto de 30 questões, onde cada questão adiciona **uma funcionalidade do jogo**.  
+Este projeto é uma **atividade didática de RPG**, estruturada em **30 questões**, cada uma adicionando uma funcionalidade ao jogo.  
 
 🎯 **Objetivos principais:**
-
 - Aprender e aplicar conceitos de **POO** de forma prática e divertida.  
 - Criar heróis, inimigos, armas, poções e sistema de combate.  
-- Demonstrar passo a passo a evolução do código e do jogo.
+- Demonstrar a evolução do código e do jogo passo a passo.  
 
 ---
 
-## 🧩 Como Funciona o Jogo
+## 🧩 Personagens Jogáveis
 
-✨ **Personagens jogáveis:**  
-- **Guerreiro:** especialista em combate corpo a corpo ⚔️  
-- **Mago:** usa magia para atacar e possui poder mágico ✨  
-- **Arqueiro:** ataque à distância com precisão especial 🏹  
+✨ **Heróis:**
+- **Guerreiro ⚔️**: especialista em combate corpo a corpo.  
+- **Mago ✨**: usa magia e habilidades especiais.  
+- **Arqueiro 🏹**: ataque à distância com alta precisão.  
 
-👹 **Inimigos:**  
-- Goblins, Orcs e outros monstros, cada um com atributos próprios (vida e ataque).  
+👹 **Inimigos:**
+- Goblins, Orcs e outros monstros, cada um com atributos próprios (vida, ataque e habilidades especiais).  
 
-🛡️ **Itens:**  
-- Armas para aumentar o ataque 🗡️  
-- Poções para recuperar vida 🍷  
+🛡️ **Itens:**
+- Armas 🗡️ para aumentar o ataque.  
+- Poções 🍷 para recuperar vida.  
 
-⚔️ **Sistema de Ataque:**  
+⚔️ **Sistema de Ataque:**
 - Ataque básico: personagem causa dano ao inimigo.  
-- Ataque real: considera ataque base + arma equipada.
-
-🌟 **Evolução do jogo:**  
-- Cada questão adiciona novos recursos: inventário, habilidades especiais, polimorfismo, combate por turnos, batalhas em equipe.
+- Ataque real: ataque base + arma equipada.  
 
 ---
 
@@ -50,9 +46,48 @@ Este projeto é uma **atividade didática de RPG**, estruturada em um conjunto d
 - **🔒 Encapsulamento:** proteção de atributos críticos (como vida).  
 - **📜 Herança:** classes derivadas de `Personagem`.  
 - **🔄 Polimorfismo:** métodos de ataque e habilidades únicos para cada classe.  
-- **🧩 Composição:** personagens possuem armas, poções e inventário.
+- **🧩 Composição:** personagens possuem armas, poções e inventário.  
+- **📦 Abstração:** habilidades e ataques seguem contratos definidos por classes base.  
 
 ---
+
+## 🔥 Evolução do Jogo
+
+### **Nível Básico (1-10) – O Despertar do Herói**
+- Criação de heróis: Guerreiro, Mago e Arqueiro  
+- Criação de inimigos básicos: Goblins  
+- Visualização do status de cada personagem  
+- Ataque simples entre heróis e monstros  
+- Criação de armas e poções  
+- Equipamento de armas e ataque real  
+
+### **Nível Intermediário (11-20) – A Forja das Lendas**
+- Evita repetição criando classe base `Personagem`  
+- Proteção do atributo vida com `@property` e `@setter`  
+- Método `receber_dano()` para dano realista  
+- Ataques com efeito concreto nos inimigos  
+- Inventário para armazenar armas e poções  
+- Uso de poções para recuperação de vida  
+- Ataques únicos para cada classe (magia, precisão, força)  
+- Fábrica de monstros para criar Goblins padrão  
+- Método `esta_vivo()` para controlar sobrevivência  
+
+### **Nível Avançado (21-30) – O Panteão dos Campeões**
+- Criação de molde de habilidades (`Habilidade`)  
+- Habilidades concretas: AtaqueForte e BolaDeFogo  
+- Personagem pode usar qualquer habilidade contra inimigos  
+- Aleatoriedade no dano usando a classe `Dado`  
+- Combate imprevisível: dano variável com dados  
+- Inimigos mais fortes: Orcs com ataques críticos  
+- Gerenciador de batalhas centraliza regras de combate  
+- Sistema de turnos para combate estratégico  
+- Determinação do vencedor da batalha  
+- Batalhas em equipe entre grupos de heróis e inimigos  
+
+---
+
+
+
 
 
 
