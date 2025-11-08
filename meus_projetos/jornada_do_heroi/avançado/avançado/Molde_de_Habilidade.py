@@ -28,7 +28,7 @@ class Personagem:
 
     def aprender_habilidade(self, habilidade):
         self.habilidades.append(habilidade)  
-        print(f'{self.nome} aprendeu a ahabilidade: {habilidade.nome}')  
+        print(f'{self.nome} aprendeu a haabilidade: {habilidade.nome}')  
 
     def usar_habilidade(self,indice,alvo):
         if indice < len(self.habilidades):
